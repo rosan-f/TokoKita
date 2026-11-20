@@ -36,7 +36,7 @@
                         <div class="p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                             <!-- Image + Info -->
                             <div class="flex items-center gap-4 flex-1">
-                                <div class="w-16 h-16 rounded-xl bg-slate-100 overflow-hidden flex-shrink-0 border border-slate-200">
+                                <div class="w-16 h-16 rounded-xl bg-slate-100 overflow-hidden shrink-0 border border-slate-200">
                                     <img src="{{ $item->product->image_url }}"
                                         alt="{{ $item->product->name }}" class="w-full h-full object-cover">
                                 </div>
@@ -65,7 +65,7 @@
                                 </form>
 
                                 <!-- Subtotal -->
-                                <div class="text-right min-w-[100px]">
+                                <div class="text-right min-w-25">
                                     <span class="block text-sm font-extrabold text-blue-600">{{ $item->formatted_subtotal }}</span>
                                 </div>
 
